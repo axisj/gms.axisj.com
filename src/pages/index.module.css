@@ -1,0 +1,21 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.defBox{
+  text-align: center;
+  padding:2rem 0;
+  word-break: keep-all;
+}
+
+.priceHeader{
+  text-align: center;
+}
+
+/*Override...*/
+
+@media screen and (max-width: 996px) {
+
+}
+
