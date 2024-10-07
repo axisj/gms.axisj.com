@@ -1,0 +1,114 @@
+.section{
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+
+.sportsContainer{
+    position: relative;
+    padding: 1.5rem 0;
+}
+.sportsBox{
+
+}
+.sbImgWrap{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sportItemTitle{
+    font-size: 1.25rem;
+}
+.sportItemTitle strong{}
+.sportItemTitle span{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 0.25rem;
+}
+.sportItemDesc{
+    display: none;
+}
+
+
+.sportItemButton {
+    cursor: pointer;
+    position: relative;
+    border: 0.083rem solid #000;
+    border-radius: 4rem;
+    font-size:0.875rem;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    z-index: 0;
+}
+.sportItemButton:hover {
+    text-decoration: none;
+    color: #000;
+    border: 0.083rem solid transparent;
+}
+
+[data-theme='dark'] .sportItemButton {
+    color: #fff;
+    background: #000;
+    border: 0.083rem solid #fff;
+}
+[data-theme='dark'] .sportItemButton:hover {
+    border: 0.083rem solid transparent;
+}
+
+.sportItemButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(4px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 4rem;
+
+}
+
+.sportItemButton:active {
+    color: #000
+}
+
+.sportItemButton:active:after {
+    background: transparent;
+}
+
+.sportItemButton:hover:before {
+    opacity: 1;
+}
+
+.sportItemButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 4rem;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+@media (max-width: 768px) {
+
+}

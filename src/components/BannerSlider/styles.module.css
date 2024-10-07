@@ -1,13 +1,18 @@
-.banners{
-
+.section{
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+    width: 100%;
 }
-.banners h3{
+
+.section h3{
     text-align: center;
     margin:0;
     padding:0;
 }
-.banners p{
+.section p{
     text-align: center;
+    padding:1rem;
 }
 
 .sliderContainer{

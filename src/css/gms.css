@@ -1,0 +1,27 @@
+.navbar__brand {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+}
+.navbar__logo {
+    height: 46px;
+}
+.navbar__logo img {
+    width: 150px;
+    height: 46px;
+}
+.navbar__title{
+    display: none;
+}
+
+/*.navbar__title {*/
+/*    padding-top: 2px;*/
+/*    font-size: 18px;*/
+/*    font-family: "GmarketSans", sans-serif;*/
+/*    font-weight: 500;*/
+/*    line-height: 1;*/
+/*}*/
+/*.navbar__title::before {*/
+/*    content: "AXB";*/
+/*    font-weight: 700;*/
+/*}*/

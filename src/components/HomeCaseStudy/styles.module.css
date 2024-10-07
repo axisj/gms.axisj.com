@@ -1,0 +1,101 @@
+.section {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.youtubeWrap {
+    margin-bottom:2rem;
+}
+
+.csDesc{}
+.csDesc h2{
+    font-size: 1.5rem;
+}
+
+.csDesc p{
+    text-align: left;
+}
+
+.csButton {
+    cursor: pointer;
+    position: relative;
+    border: 0.083rem solid #000;
+    border-radius: 4rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    z-index: 0;
+}
+.csButton:hover {
+    text-decoration: none;
+    color: #000;
+    border: 0.083rem solid transparent;
+}
+
+[data-theme='dark'] .csButton {
+    color: #fff;
+    background: #000;
+    border: 0.083rem solid #fff;
+}
+[data-theme='dark'] .csButton:hover {
+    border: 0.083rem solid transparent;
+}
+
+.csButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(4px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 4rem;
+
+}
+
+.csButton:active {
+    color: #000
+}
+
+.csButton:active:after {
+    background: transparent;
+}
+
+.csButton:hover:before {
+    opacity: 1;
+}
+
+.csButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 4rem;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-width: 768px) {
+    .csDesc{
+        text-align: center;
+    }
+}
+
+

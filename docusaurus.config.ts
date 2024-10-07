@@ -6,12 +6,12 @@ const config: Config = {
   markdown: {
     mermaid: true
   },
-  title: 'AXBoot.dev',
-  tagline: 'APISync',
+  title: 'gms.axisj.com',
+  tagline: 'GMS',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://apisync.dev',
+  url: 'https://gms.axisj.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -19,7 +19,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'axisj', // Usually your GitHub org/user name.
-  projectName: 'apisync.dev', // Usually your repo name.
+  projectName: 'gms.axisj.com', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -48,7 +48,7 @@ const config: Config = {
         theme: {
           customCss: [
             "./src/css/fonts.css",
-            './src/css/custom.css', "./src/css/axboot.css"],
+            './src/css/custom.css', "./src/css/gms.css"],
         },
       } satisfies Preset.Options,
     ],
@@ -58,19 +58,19 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/axboot-sns.jpg',
     navbar: {
-      title: 'axboot.dev',
+      title: 'GMS',
       logo: {
-        alt: 'AXBoot.dev Logo',
-        src: 'img/apisync_logo.svg',
-        srcDark: 'img/apisync_logo_dark.svg',
-        width: 164,
+        alt: 'GMS Logo',
+        src: 'img/gms_logo.svg',
+        srcDark: 'img/gms_logo_dark.svg',
+        width: 90,
         height: 32,
       },
       items: [
-        {to: '/product', label: 'Product', position: 'left'},
-        {to: '/pricing', label: 'Pricing', position: 'left'},
-        {to: '/enterprise', label: 'Enterprise', position: 'left'},
-        {to: '/advanced', label: 'Advanced', position: 'left'},
+        {to: '/introduction', label: 'GMS소개', position: 'left'},
+        {to: '/solution', label: '솔루션', position: 'left'},
+        {to: '/sports', label: '종목별 관리 시스템', position: 'left'},
+        {to: '/casestudy', label: '고객후기', position: 'left'},
         {to: '/get-in-touch', label: 'AXISJ', position: 'left'},
         // {
         //   type: 'docSidebar',
@@ -97,7 +97,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
@@ -147,7 +147,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} AXISJ, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} AXISJ, Inc.`,
     },
     prism: {
       theme: prismThemes.github,

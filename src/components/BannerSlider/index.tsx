@@ -22,29 +22,44 @@ type BannerItem = {
 
 const BannerList: BannerItem[] = [
   {
-    title: '삼성',
+    title: '대한역도연맹',
     light: "/img/partner_1.png",
     dark: "/img/partner_1_dark.png",
   },
   {
-    title: '에어프리미아',
+    title: '대한배드민턴협회',
     light: "/img/partner_2.png",
     dark: "/img/partner_2_dark.png",
   },
   {
-    title: '서울주택공사',
+    title: '대한축구협회',
     light: "/img/partner_3.png",
     dark: "/img/partner_3_dark.png",
   },
   {
-    title: '위포',
+    title: '대한자전거연맹',
     light: "/img/partner_4.png",
     dark: "/img/partner_4_dark.png",
   },
   {
-    title: '푸르니보육지원재단',
+    title: '대한민국농구협회',
     light: "/img/partner_5.png",
     dark: "/img/partner_5_dark.png",
+  },
+  {
+    title: '대한탁구협회',
+    light: "/img/partner_6.png",
+    dark: "/img/partner_6_dark.png",
+  },
+  {
+    title: '대한볼링협회',
+    light: "/img/partner_7.png",
+    dark: "/img/partner_7_dark.png",
+  },
+  {
+    title: '대한골프협회',
+    light: "/img/partner_8.png",
+    dark: "/img/partner_8_dark.png",
   },
 ];
 
@@ -65,15 +80,14 @@ export default function BannerSlider(): JSX.Element {
 
 
   return (
-    <section className={styles.banners}>
+    <section className={styles.section}>
       <div className="container">
         <h2 className="margin-bottom--lg text--center">Partners</h2>
         <h3>
-          하루하루 많은 한국 개발자들 덕분에<br />
-          APISync의 사용량이 점점 늘고 있습니다.
+          GMS 도입으로 새로운 스포츠의 미래를 준비하십시오.
         </h3>
         <p>
-          API를 손쉽게 관리하고 협업하며, APISync로 효율적인 개발 프로세스를 경험하고 있습니다.
+          운영 측에선 유연한 경기 운영과 비용절감을 얻고, 선수와 관객에 최고의 경험을 선사하세요.
         </p>
         <div className={styles.sliderContainer}>
             <Slider ref={slider => (sliderRef = slider)} {...settings}>
@@ -101,12 +115,6 @@ export default function BannerSlider(): JSX.Element {
               },
             }}
           >
-            <Button type="primary" size={'large'}>
-              지금 구매하세요
-            </Button>
-            <Button type="default" size={'large'}>
-              영업팀 문의하기
-            </Button>
           </ConfigProvider>
         </div>
       </div>

@@ -1,4 +1,4 @@
-.features {
+.section {
   display: flex;
   align-items: center;
   padding: 3rem 0;
@@ -6,8 +6,8 @@
 }
 
 .featureImg {
-  max-width: 18.75rem;
-  max-height: 12.5rem;
+  max-width: 15rem;
+  max-height: 10rem;
 }
 
 .featureTitle{
@@ -39,4 +39,7 @@
     font-size:0.875rem;
 }
 
+.featureList ul li{
+    margin-bottom: 1rem;
+}
 
