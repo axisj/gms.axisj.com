@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Back-End": {
+    "message": "Back-End",
+    "description": "The label for category Back-End in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Front-End": {
+    "message": "Front-End",
+    "description": "The label for category Front-End in sidebar tutorialSidebar"
+  },
+  "sidebar.apiSidebar.category.Back-End": {
+    "message": "Back-End",
+    "description": "The label for category Back-End in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Front-End": {
+    "message": "Front-End",
+    "description": "The label for category Front-End in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Components": {
+    "message": "Components",
+    "description": "The label for category Components in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Internal Module": {
+    "message": "Internal Module",
+    "description": "The label for category Internal Module in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.External Module": {
+    "message": "External Module",
+    "description": "The label for category External Module in sidebar apiSidebar"
+  }
+}

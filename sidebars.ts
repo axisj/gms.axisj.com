@@ -1,87 +1,96 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
 const sidebars: SidebarsConfig = {
-  tutorialSidebar: [
-    'intro',
-    // 'installation',
-    'quick-start-guide',
-    'system-requirement',
+  baseSidebar: [
+    'index',
     {
       type: 'category',
-      label: 'Back-End',
+      label: '역도 GMS',
       items: [
-        'tutorial/back-end/dev-environment',
-        'tutorial/back-end/spring-security',
-        'tutorial/back-end/code-generation',
-        'tutorial/back-end/create-api-interface',
-        'tutorial/back-end/system-api-customizing',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Front-End',
-      items: [
-        'tutorial/front-end/router',
-        'tutorial/front-end/page-frame',
-        'tutorial/front-end/program',
-        'tutorial/front-end/program-store',
-        'tutorial/front-end/template',
-        'tutorial/front-end/service-repository',
-        'tutorial/front-end/i18n',
-        'tutorial/front-end/theme',
-      ],
-    }
-  ],
-  apiSidebar: [
-    {
-      type: 'category',
-      label: 'Back-End',
-      items: [
-        'api/back-end/system-api',
-        'api/back-end/system-api-specification',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Front-End',
-      items: [
+        'Weightlifting/introduction',
         {
           type: 'category',
-          label: 'Components',
+          label: 'GMS 사용법',
           items: [
-            'api/front-end/core-component/datagrid',
-            'api/front-end/core-component/datagrid-editor',
-            'api/front-end/core-component/drawer-store',
-            'api/front-end/core-component/modal-store',
-            'api/front-end/core-component/MultiFilter',
-            'api/front-end/core-component/program-title',
-            'api/front-end/core-component/SearchParams',
-            'api/front-end/core-component/StatTable',
+            'Weightlifting/gms/gms-usage',
+            'Weightlifting/gms/scoreboard',
+            'Weightlifting/gms/progress-board',
+            'Weightlifting/gms/referee-tablet',
+            'Weightlifting/gms/timer',
+            'Weightlifting/gms/admin'
           ],
-        }
+        },
+        {
+          type: 'category',
+          label: '역도 기본상식',
+          items: [
+            'Weightlifting/info/about-weightlifting',
+            'Weightlifting/info/wl-story',
+            'Weightlifting/info/snatch-clean-jerk',
+            'Weightlifting/info/ranking',
+            'Weightlifting/info/score-mark',
+            'Weightlifting/info/order-of-play',
+            'Weightlifting/info/set-weight',
+            'Weightlifting/info/plate',
+            'Weightlifting/info/color',
+            'Weightlifting/info/diameter-thickness',
+            'Weightlifting/info/material-marking',
+            'Weightlifting/info/tolerance',
+            'Weightlifting/info/shoes-and-belt',
+          ],
+        },
       ],
     },
     {
       type: 'category',
-      label: 'Internal Module',
-      items: ['api/module-builtin/user'],
+      label: '배드민턴',
+      items: [
+        'Badminton/introduction'
+      ],
     },
     {
       type: 'category',
-      label: 'External Module',
-      items: ['api/module-additional/excel-converter'],
-    }
-  ],
+      label: '축구',
+      items: [
+        'Soccer/introduction'
+      ],
+    },
+    {
+      type: 'category',
+      label: '로드사이클',
+      items: [
+        'Roadcycling/introduction'
+      ],
+    },
+    {
+      type: 'category',
+      label: '농구',
+      items: [
+        'Basketball/introduction'
+      ],
+    },
+    {
+      type: 'category',
+      label: '탁구',
+      items: [
+        'Tabletennis/introduction'
+      ],
+    },
+    {
+      type: 'category',
+      label: '볼링',
+      items: [
+        'Balling/introduction'
+      ],
+    },
+    {
+      type: 'category',
+      label: '골프',
+      items: [
+        'Golf/introduction'
+      ],
+    },
+  ]
 };
 
 export default sidebars;

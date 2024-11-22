@@ -8,7 +8,6 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { Avatar, Flex, ConfigProvider, Segmented, Button, theme } from "antd";
-import { useColorMode } from "@docusaurus/theme-common";
 import PriceTable from "@site/src/components/PriceTable";
 import ThemedImage from "@theme/ThemedImage";
 import PlanTable from "@site/src/components/PlanTable";
@@ -17,9 +16,7 @@ export default function App(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
 
   return (
-    <Layout
-      title={`Home`}
-      description="Description will go into a meta tag in <head />">
+    <Layout>
       <main>
         <div className="container">
           <div className={styles.priceHeader}>
@@ -37,9 +34,9 @@ export default function App(): JSX.Element {
           </p>
           </div>
         </div>
-        <PriceTable />
+        {/*<PriceTable />*/}
 
-        <PlanTable />
+        {/*<PlanTable />*/}
       </main>
     </Layout>
   );

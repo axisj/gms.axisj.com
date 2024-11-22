@@ -124,7 +124,7 @@ function Feature({title, light, dark, description, feature}: FeatureItem) {
 
 export default function HomeFeatures(): JSX.Element {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="features">
       <div className="container">
         <h2 className="margin-bottom--lg text--center">FEATURES</h2>
         <div className="row">

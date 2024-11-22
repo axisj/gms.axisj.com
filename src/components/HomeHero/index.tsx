@@ -4,7 +4,6 @@ import styles from './styles.module.css';
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { Button, ConfigProvider, Input, Space, theme } from "antd";
-import {useColorMode} from '@docusaurus/theme-common';
 import { useCallback, useEffect, useState } from "react";
 import ThemedImage from "@theme/ThemedImage";
 import styled from "styled-components";
@@ -26,7 +25,6 @@ const heroImgs = [
 ]
 
 export default function HomeHero(): JSX.Element {
-  const { colorMode } = useColorMode();
   const [isHovered, setIsHovered] = useState(false);
   const depthValues = heroImgs.map((_, index) => (isHovered ? index * 50 : index * 10));
   const transitionValues = heroImgs.map((_, index) => `${0.3 + index * 0.05}s ease-out`);
@@ -60,6 +58,7 @@ export default function HomeHero(): JSX.Element {
               >
                 {heroImgs.map((src, index) => (
                   <img src={src}
+                    key={index}
                     alt="hero ${index}"
                     style={{
                       position:'absolute',

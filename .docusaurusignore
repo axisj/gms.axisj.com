@@ -1,0 +1,6 @@
+node_modules/
+src/components/utils/react-holo-card-effect/node_modules/
+src/pages/company.tsx
+src/pages/get-in-touch.tsx
+src/pages/pricing.tsx
+src/pages/success-stories.tsx

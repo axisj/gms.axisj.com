@@ -4,11 +4,9 @@ import styles from './styles.module.css';
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import ThemedImage from "@theme/ThemedImage";
-import {HoloCard} from "../utils/react-holo-card-effect";
-//import {HoloCard} from "react-holo-card-effect";
-import {useColorMode} from '@docusaurus/theme-common';
 import Tilt from "react-parallax-tilt";
 import {useState} from "react";
+
 
 type SportList = {
   title: string;
@@ -99,7 +97,7 @@ const SportList: SportList[] = [
     ),
   },
   {
-    title: "Golf",
+    title: "골프",
     title_en:"Road Cycling",
     status:"Now Developing",
     light: "/img/sports_8_gray.svg",
@@ -114,7 +112,6 @@ const SportList: SportList[] = [
 
 function SportCard({title, title_en, status, light, dark, star, description}: SportList) {
 
-  const { colorMode } = useColorMode();
   const [scale, setScale] = useState(1);
 
   return (
@@ -128,7 +125,7 @@ function SportCard({title, title_en, status, light, dark, star, description}: Sp
             scale={scale}
             glareEnable={true}
             glareMaxOpacity={0.9}
-            glareColor={colorMode === 'dark' ? '#1a1a1b' : '#fff'}
+            // glareColor={colorMode === 'dark' ? '#1a1a1b' : '#fff'}
             glarePosition="all"
             glareBorderRadius="20px"
             gyroscope={true}
@@ -142,12 +139,17 @@ function SportCard({title, title_en, status, light, dark, star, description}: Sp
               transform: 'perspective(100px)',
             }}
           >
-            <img src={colorMode === 'dark'? dark : light}
-                 alt="hero"
-                 style={{
-                   position:'absolute',
-                 }}
+            <ThemedImage
+              alt="Sport"
+              sources={{
+                light: light,
+                dark: dark,
+              }}
+              style={{
+                position:'absolute',
+              }}
             />
+
           </Tilt>
         </div>
       </div>
@@ -163,13 +165,16 @@ function SportCard({title, title_en, status, light, dark, star, description}: Sp
 
 export default function SportsItem(): JSX.Element {
   return (
+
     <section className={styles.section}>
       <div className="container">
         <h2 className="margin-bottom--lg text--center">종목별 관리 시스템</h2>
         <div className="row">
+
           {SportList.map((props, idx) => (
-            <SportCard key={idx} {...props} />
+              <SportCard key={idx} {...props} />
           ))}
+
         </div>
       </div>
     </section>

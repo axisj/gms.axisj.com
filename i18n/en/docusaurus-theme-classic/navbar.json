@@ -1,0 +1,22 @@
+{
+  "item.label.GMS소개": {
+    "message": "What is GMS",
+    "description": "Navbar item with label GMS소개"
+  },
+  "item.label.솔루션": {
+    "message": "Solution",
+    "description": "Navbar item with label 솔루션"
+  },
+  "item.label.종목별 가이드": {
+    "message": "Guide",
+    "description": "Navbar item with label 종목별 가이드"
+  },
+  "item.label.사용후기": {
+    "message": "Case Study",
+    "description": "Navbar item with label 사용후기"
+  },
+  "item.label.액시스제이": {
+    "message": "AXISJ",
+    "description": "Navbar item with label 액시스제이"
+  }
+}

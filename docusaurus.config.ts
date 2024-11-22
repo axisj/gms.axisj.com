@@ -6,7 +6,7 @@ const config: Config = {
   markdown: {
     mermaid: true
   },
-  title: 'gms.axisj.com',
+  title: 'GMS 경기운영관리 시스템',
   tagline: 'GMS',
   favicon: 'img/favicon.ico',
 
@@ -30,7 +30,10 @@ const config: Config = {
   i18n: {
     defaultLocale: 'ko',
     locales: ["ko", "en"],
-
+    localeConfigs: {
+      en: { label: 'English'},
+      ko: { label: '한국어'},
+    },
   },
 
   presets: [
@@ -39,8 +42,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/axisj/axboot.dev/tree/main',
+          // editUrl:
+          //   'https://github.com/axisj/axboot.dev/tree/main',
         },
         blog: {
           showReadingTime: true,
@@ -56,6 +59,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     image: 'img/axboot-sns.jpg',
     navbar: {
       title: 'GMS',
@@ -67,24 +75,11 @@ const config: Config = {
         height: 32,
       },
       items: [
-        {to: '/introduction', label: 'GMS소개', position: 'left'},
-        {to: '/solution', label: '솔루션', position: 'left'},
-        {to: '/sports', label: '종목별 관리 시스템', position: 'left'},
-        {to: '/casestudy', label: '고객후기', position: 'left'},
-        {to: '/get-in-touch', label: 'AXISJ', position: 'left'},
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'apiSidebar',
-        //   position: 'left',
-        //   label: 'API',
-        // },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/', label: 'GMS소개', position: 'left', exact: true },
+        { to: '/#features', label: '특징', position: 'left', activeBaseRegex: '^/\\#features$'},
+        { to: '/#casestudy', label: '도입사례', position: 'left', activeBaseRegex: '^/\\#casestudy$'},
+        { to: '/docs', label: '종목별 가이드', position: 'left', exact: false },
+        { to: 'https://axisj.com', label: '액시스제이', position: 'left' },
         {
           type: 'localeDropdown',
           position: 'right',
@@ -122,10 +117,6 @@ const config: Config = {
             {
               label: 'Discord',
               href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
             },
           ],
         },

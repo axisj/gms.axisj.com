@@ -6,6 +6,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import ThemedImage from "@theme/ThemedImage";
 import { Button, ConfigProvider, Segmented, theme } from "antd";
 import { useColorMode } from "@docusaurus/theme-common";
+import Layout from "@theme/Layout";
 
 type PriceItem = {
   title: string;
@@ -215,7 +216,7 @@ export default function PriceTable(): JSX.Element {
   const { colorMode } = useColorMode();
 
   return (
-    <>
+    <Layout>
       <div className="container">
         <div className={styles.segmentWrap}>
           <ConfigProvider
@@ -258,6 +259,6 @@ export default function PriceTable(): JSX.Element {
       ))}
     </div>
   </div>
-  </>
+  </Layout>
 );
 }

@@ -4,18 +4,18 @@ import styles from './styles.module.css';
 import ReactPlayer from 'react-player';
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import ThemedImage from "@theme/ThemedImage";
-import ResponsiveEmbed from "react-responsive-embed";
+import ResponsiveEmbed from "@site/src/components/utils/react-responsive-embed"; //react18 대응
 
 export default function HomeCaseStudy(): JSX.Element {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="casestudy">
       <div className="container">
         <h2 className="margin-bottom--lg text--center">GMS 도입사례</h2>
         <div className="row">
 
           <div className={clsx('col col--5')}>
-            <div class={styles.youtubeWrap}>
-              <ResponsiveEmbed src='https://www.youtube.com/embed/ia9_LKjaEIc?si=UsTnwlx6zfVoyLxV' ratio='16:9' className={styles.youtube} />
+            <div className={styles.youtubeWrap}>
+              <ResponsiveEmbed src='https://www.youtube.com/embed/ia9_LKjaEIc?si=UsTnwlx6zfVoyLxV' ratio='16:9' />
             </div>
           </div>
           <div className={clsx('col col--7')}>

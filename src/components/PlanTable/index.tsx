@@ -9,10 +9,7 @@ import { useColorMode } from "@docusaurus/theme-common";
 
 export default function PlanTable(): JSX.Element {
 
-  const { colorMode } = useColorMode();
-
   return (
-    <>
       <div className="container">
         <table>
 
@@ -51,6 +48,5 @@ export default function PlanTable(): JSX.Element {
           </tbody>
         </table>
       </div>
-    </>
   );
 }
