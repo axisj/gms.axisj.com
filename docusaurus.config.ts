@@ -51,7 +51,7 @@ const config: Config = {
         theme: {
           customCss: [
             "./src/css/fonts.css",
-            './src/css/custom.css', "./src/css/gms.css"],
+            './src/css/custom.css', "./src/css/gms.css", "./src/css/swiper.css"],
         },
       } satisfies Preset.Options,
     ],
@@ -82,11 +82,6 @@ const config: Config = {
         { to: 'https://axisj.com', label: '액시스제이', position: 'left' },
         {
           type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/axisj/axboot.dev',
-          label: 'GitHub',
           position: 'right',
         },
       ],
