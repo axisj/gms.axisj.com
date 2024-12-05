@@ -6,11 +6,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '역도 GMS',
+      collapsed: false,
       items: [
         'Weightlifting/introduction',
         {
           type: 'category',
           label: 'GMS 사용법',
+          collapsed: false,
           items: [
             'Weightlifting/gms/gms-usage',
             'Weightlifting/gms/scoreboard',
@@ -23,6 +25,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: '역도 기본상식',
+          collapsed: false,
           items: [
             'Weightlifting/info/about-weightlifting',
             'Weightlifting/info/wl-story',
@@ -41,55 +44,55 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    {
-      type: 'category',
-      label: '배드민턴',
-      items: [
-        'Badminton/introduction'
-      ],
-    },
-    {
-      type: 'category',
-      label: '축구',
-      items: [
-        'Soccer/introduction'
-      ],
-    },
-    {
-      type: 'category',
-      label: '로드사이클',
-      items: [
-        'Roadcycling/introduction'
-      ],
-    },
-    {
-      type: 'category',
-      label: '농구',
-      items: [
-        'Basketball/introduction'
-      ],
-    },
-    {
-      type: 'category',
-      label: '탁구',
-      items: [
-        'Tabletennis/introduction'
-      ],
-    },
-    {
-      type: 'category',
-      label: '볼링',
-      items: [
-        'Balling/introduction'
-      ],
-    },
-    {
-      type: 'category',
-      label: '골프',
-      items: [
-        'Golf/introduction'
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: '배드민턴',
+    //   items: [
+    //     'Badminton/introduction'
+    //   ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: '축구',
+    //   items: [
+    //     'Soccer/introduction'
+    //   ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: '로드사이클',
+    //   items: [
+    //     'Roadcycling/introduction'
+    //   ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: '농구',
+    //   items: [
+    //     'Basketball/introduction'
+    //   ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: '탁구',
+    //   items: [
+    //     'Tabletennis/introduction'
+    //   ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: '볼링',
+    //   items: [
+    //     'Balling/introduction'
+    //   ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: '골프',
+    //   items: [
+    //     'Golf/introduction'
+    //   ],
+    // },
   ]
 };
 

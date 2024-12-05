@@ -76,9 +76,11 @@ const config: Config = {
       },
       items: [
         { to: '/', label: 'GMS소개', position: 'left', exact: true },
-        { to: '/#features', label: '특징', position: 'left', activeBaseRegex: '^/\\#features$'},
-        { to: '/#casestudy', label: '도입사례', position: 'left', activeBaseRegex: '^/\\#casestudy$'},
-        { to: '/docs', label: '종목별 가이드', position: 'left', exact: false },
+        { to: '/standard', label: '제품규격', position: 'left' },
+        { to: '/spec', label: '제품사양', position: 'left' },
+        // { to: '/#features', label: '특징', position: 'left', activeBaseRegex: '^/\\#features$'},
+        // { to: '/#casestudy', label: '도입사례', position: 'left', activeBaseRegex: '^/\\#casestudy$'},
+        { to: '/docs', label: '도움말', position: 'left', exact: false },
         { to: 'https://axisj.com', label: '액시스제이', position: 'left' },
         {
           type: 'localeDropdown',
