@@ -1,10 +1,6 @@
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
+import ResponsiveEmbed from "react-responsive-embed"; //react18 대응
 import styles from './styles.module.css';
-import ReactPlayer from 'react-player';
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import ThemedImage from "@theme/ThemedImage";
-import ResponsiveEmbed from "@site/src/components/utils/react-responsive-embed"; //react18 대응
 
 export default function HomeCaseStudy(): JSX.Element {
   return (
