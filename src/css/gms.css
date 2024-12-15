@@ -30,3 +30,22 @@
 .footer.footer--dark {
     --ifm-footer-background-color: #333;
 }
+
+.main-wrapper {
+    margin: 0 auto;
+    max-width: var(--ifm-container-width);
+    @media (min-width: 1440px) {
+        max-width: var(--ifm-container-width-xl);
+    }
+}
+
+
+.markdown h1:first-child, .markdown h1 {
+    --ifm-h1-font-size: 1.8rem;
+}
+.markdown h2:first-child, .markdown h2 {
+    --ifm-h2-font-size: 1.3rem;
+}
+.markdown h3:first-child, .markdown h3 {
+    --ifm-h3-font-size: 1.1rem;
+}
